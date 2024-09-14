@@ -1,0 +1,190 @@
+/* section1 */
+
+.section1,.section2,.section3{
+    width: 95%;
+    margin-top: 20vh;
+    /* height: 50vh; */
+    display: block;
+    overflow: hidden;   
+}
+
+.section1 .container1,
+.section2 .container1,
+.section3 .container1{
+    
+    display: grid;
+    grid-template-columns: auto 650px;
+    align-items: center;
+    box-shadow: 4px 10px 10px rgba(128, 128, 128, 0.099);
+    animation: reveal 1s forwards 1;
+    /* grid */
+}
+
+@keyframes reveal {
+    from {
+        transform: translateY(40px) translateX(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+@keyframes reveal2 {
+    from {
+        transform: translateX(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+@keyframes reveal3 {
+    from {
+            transform: translateY(40px) translateX(-20px);
+        }
+    
+        to {
+            opacity: 1;
+            transform: none;
+        }
+}
+.section1 .container1 img,
+.section2 .container1 img,
+.section3 .container1 img{
+    width: 650px;
+    height: 400px;
+}
+.section1 .container1 img,
+.section2 .container1 img,
+.section3 .container1 img{
+    animation: reveal2 1s forwards 1;
+    border-radius: 15px;
+}
+
+
+
+
+.section1 .container1 .description1,
+.section2 .container1 .description1,
+.section3 .container1 .description1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding:48px 32px;
+    gap: 60px;
+}
+.section1 .container1 .description1 h1,
+.section2 .container1 .description1 h1,
+.section3 .container1 .description1 h1{
+    font-size: 48px;
+    font-weight: 200;
+    text-shadow: 3px 3px  rgba(128, 128, 128, 0.285);
+}
+.section1 .container1 .description1 p,
+.section2 .container1 .description1 p,
+.section3 .container1 .description1 p{
+    color:rgba(128, 128, 128, 0.678);
+    line-height: 1.8em;
+    font-weight: 100;
+    font-size: 22px;
+    text-align: justify;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.103);
+    /* text-align: justify; */
+    animation: reveal3 1s forwards 1;
+}
+/* contianer2 */
+.section1 .container2,
+.section2 .container2,
+.section3 .container2{
+    display: flex;
+    flex-direction: column;
+    height: 340px;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 4px 10px 10px rgba(128, 128, 128, 0.099);
+}
+.section1 .container2 h1,
+.section2 .container2 h1,.section3 .container2 h1{
+    font-weight: 400;
+    font-size: 48px;
+}
+.section1 .container2 h2{
+    font-weight: 100;
+    font-size: 32px;
+    color: rgba(0, 0, 0, 0.556);
+}
+.section1 .container2 p{
+    color:rgba(128, 128, 128, 0.581); 
+    width: 70%;
+    text-align: justify;
+    line-height: 1.4em;
+    letter-spacing: 0.1em;
+}
+.section1 .container3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    height: 340px;
+    /* gap: 10vh; */
+    flex-direction: column;
+        height: 340px;
+        align-items: center;
+        justify-content: space-evenly;
+        box-shadow: 4px 10px 10px rgba(128, 128, 128, 0.075);
+}
+.hr{
+    width: 200px;
+    height: 10px;
+    border: dotted 8px rgba(172, 72, 72, 0.462);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    box-shadow: 0px 10px 10px rgba(128, 128, 128, 0.144);
+   
+}
+.hr2{
+    width: 800px;
+    height: 10px;
+    border: solid 8px rgba(41, 38, 38, 0.462);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    box-shadow: 0px 10px 10px rgba(128, 128, 128, 0.144);
+}
+.section1 .container3 .container3o{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* gap: 20vh; */
+
+}
+.section1 .container3 .container3o img{
+    height:100px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* .bgimg {
+    height: 100%;
+    background-image: url(../images/vedrana-filipovic-jxqTaXF5WmY-unsplash-Custom.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-position: 70% 30%;
+    background-clip: border-box;
+} */

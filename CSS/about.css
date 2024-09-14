@@ -1,0 +1,183 @@
+body{
+   
+}
+.about{
+    margin-top: 10vh;
+    /* height: 100vh; */
+    width: 100%;
+    /* background-image: linear-gradient(rgba(68, 68, 71, 0.632), rgba(5, 23, 46, 0.805)),url(../images/national-cancer-institute-v7ibB19EUbQ-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:600px; */
+}
+main {
+    position: sticky;
+    /* background-attachment: fixed; */
+    padding: 20px;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+
+}
+
+.about-us {
+    padding: 30px 50px;
+    background-color: #f9f9f98e;
+    /* border-radius: 10px; */
+        display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+    overflow: hidden;
+}
+.about-us .imgcontainer1,
+.about-us .imgcontainer3{
+    display: grid;
+    grid-template-columns:1.1fr 1fr;
+    
+}
+.about-us h1,
+.about-us h2 {
+    /* align-self: flex-start; */
+    /* text-align: center; */
+    margin-bottom: 15px;
+    color: gray;
+    font-weight: 400;
+    font-size: 32px;
+
+}
+
+.about-us p {
+    /* width:60%; */
+    padding-right: 40px;
+    text-align: justify;
+    font-size: 18px;
+    color: rgba(69, 66, 66, 0.816);
+    margin-bottom: 20px;
+}
+
+.about-us ul {
+    list-style: none;
+    padding-left: 0;
+
+}
+
+
+
+.about-us ul li {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-size: 18px;
+    margin-bottom: 60px;
+    color: rgb(56, 41, 41);
+}
+
+.about-us ul li strong {
+    align-self: flex-start;
+    font-size: 24px;
+    color: rgba(176, 77, 77, 0.768);
+}
+.about-us .imgcontainer1 .description1,
+.about-us .imgcontainer3 .description3{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    opacity: 0;
+    animation:reveal 3s forwards 1;
+    align-items: center;
+        justify-content: center;
+
+}
+
+@keyframes reveal {
+    from{
+        transform: translateY(40px);
+    }
+    to{
+        opacity: 1;
+        transform: none;
+    }
+}
+@keyframes reveal2 {
+    from{
+        transform: translateX(40px);
+    }
+    to{
+        opacity: 1;
+        transform: none;
+    }
+}
+@keyframes reveal3 {
+    from{
+        transform: translateX(100px);
+        background-position: 600px;
+        /* overflow: hidden; useless as applying overflow to parent container */
+    }
+    to{
+        opacity: 1;
+        transform: none;
+        /* overflow: hidden; */
+        background-position: 0px;
+    }
+}
+
+.about-us .imagecon{
+    border-radius: 15px;
+}
+.about-us .imgcontainer1 .imagecon{
+    /* width: 450px; */
+    background-image: linear-gradient(rgba(68, 68, 71, 0.192), rgba(121, 125, 130, 0.236)),url(../images/national-cancer-institute-v7ibB19EUbQ-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+        /* background-position:6px; */
+    box-shadow: 10px 10px 10px gray;
+    animation: reveal2 1s forwards 1;
+}
+.about-us .imgcontainer3{
+    height: 600px;
+}
+.about-us .imgcontainer3 .imagecon{
+    background-image: linear-gradient(rgba(68, 68, 71, 0.192), rgba(121, 125, 130, 0.236)), url(../images/national-cancer-institute-PP5nO5gcLdA-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-position:6px; */
+        box-shadow: 10px 10px 10px gray;
+        animation: reveal2 1s forwards 1;
+}
+.about-us .imgcontainer2{
+    width: 100%;
+    /* width; */
+    height: 300vh;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 20vh;
+    /* background-position: 0px -300px; */
+}
+.about-us .imgcontainer2 .description2{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-us .imgcontainer2 .description2 ul{
+    /* width: 90%; */
+}
+.about-us .imgcontainer2 .imagecon{
+    height: 40%;
+    width: 100%;
+    background-image: linear-gradient(rgba(68, 68, 71, 0.632), rgba(5, 23, 46, 0.182)), url(../images/thisisengineering-8yS04veb1TQ-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 5px 10px 10px rgba(128, 128, 128, 0.149);
+    /* transform: translateX(100px); */
+    /* background-position: 600px; */
+    animation: reveal3 3s forwards 1;
+    /* overflow: hidden; */
+    /* animation-delay: 3s; */
+}

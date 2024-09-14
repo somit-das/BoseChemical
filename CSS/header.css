@@ -1,0 +1,20 @@
+
+
+.header{
+    position: fixed;
+        /* position: absolute; */
+    width: 100%;
+    height: 10vh;
+        
+    box-shadow: 20px 20px 20px rgba(128, 128, 128, 0.067);
+
+        background: transparent;
+        /* background-image: linear-gradient(45deg, rgba(255, 0, 0, 0.816), rgba(0, 0, 255, 0.225)); */
+        background-color: rgba(203, 131, 131, 0.132);
+
+        backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    z-index: 100;
+}
